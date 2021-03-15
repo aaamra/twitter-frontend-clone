@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweety</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/reset.css ">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <section> 
+            <header class="container">
+                <img src="./images/logo.svg" alt="Tweety">
+            </header>
+        </section>
+     
+        <section>
+            <div class="container">
+                <div class="main">
+                    <div class="sidebar" style="width: 8rem;">
+                        <ul>
+                            <li><a href="#" class="sidebar-link">Home</a></li>
+                            <li><a href="#" class="sidebar-link">Explore</a></li>
+                            <li><a href="#" class="sidebar-link">Notifications</a></li>
+                            <li><a href="#" class="sidebar-link">Messages</a></li>
+                            <li><a href="#" class="sidebar-link">Bookmarks</a></li>
+                            <li><a href="#" class="sidebar-link">Lists</a></li>
+                            <li><a href="#" class="sidebar-link">Profile</a></li>
+                            <li><a href="#" class="sidebar-link">More</a></li>
+                        </ul>
+                    </div>
+                    <div id="news-feed" style="max-width: 700px;">
+ 
+                        <div class="tweet-form-box">
+                            <form action="" id="tweet-form">
+                                <input type="text" name="username" placeholder="Username">
+                                <textarea name="body" cols="30" rows="7" placeholder="What's up doc ?"></textarea>
+                                
+                                <hr/>
+                                <footer>
+                                    <img src="./images/avatars/1.svg" alt="" style="width: 40px;">
+
+                                    <button type="submit" id="submit-button">Tweet</button>
+                                </footer>
+                            </form>
+                        </div>
+
+                        <div id="tweets">
+                            
+                            <!-- <div class="tweet">
+                                <div class="tweet-avatar">
+                                    <img src="./images/avatars/1.svg" style="width: 50px;" alt="">
+                                </div>
+
+                                <div class="tweet-body">
+                                    <h5>aaamra</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, consequatur. Quo, architecto? Ab dicta non at placeat, sunt velit voluptas ipsum ullam, libero et expedita repellat quo omnis ad officiis.</p> 
+                                    <hr style="margin-top: .75rem; margin-bottom:0.75rem;">
+                                    <div class="tweet-buttons">
+                                        <a href="#" class="like-button liked" onclick="like()" title="like"><i class="fa fa-heart" ></i></a>
+                                        <a href="#" class="retweet-button retweeted" onclick="retweet()" title="retweet"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+                    <div class="sidebar">
+                        <div id="friends">
+                            <h3 class="friends-header">Friends</h3>
+                        <ul>
+                            <li>
+                                <div class="friend">
+                                    <img src="./images/avatars/1.svg" alt="" style="width: 40px;">
+
+                                    Abdallah Ahmed
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="friend">
+                                    <img src="./images/avatars/2.svg" alt="" style="width: 40px;">
+
+                                    Omar Ali
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="friend">
+                                    <img src="./images/avatars/3.svg" alt="" style="width: 40px;">
+
+                                    Mohammed Ali
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="friend">
+                                    <img src="./images/avatars/4.svg" alt="" style="width: 40px;">
+
+                                    Braa Khaled
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="friend">
+                                    <img src="./images/avatars/5.svg" alt="" style="width: 40px;">
+
+                                    Noor Ahmed
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

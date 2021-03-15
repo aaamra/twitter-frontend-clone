@@ -1,0 +1,185 @@
+body {
+  font-family: Nunito, "San Serif";
+}
+section {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main #news-feed {
+    flex: 1 1 0%;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .sidebar {
+    display: block;
+    width: 16.666667%;
+    height: auto;
+  }
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.friends-header {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.friend img {
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+.tweet-form-box {
+  border: 1px solid;
+  border-color: rgba(96, 165, 250, 1);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tweet-form-box input {
+  width: 100%;
+  border-width: 1px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.tweet-form-box textarea {
+  width: 100%;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.tweet-form-box footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-form-box footer img {
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  border-width: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#submit-button {
+  background-color: #47cdff;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: white;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+#friends {
+  background-color: rgba(219, 234, 254, 1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.tweet {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-avatar {
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.tweet-avatar img {
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+.tweet-body {
+  flex: 1;
+  overflow: hidden;
+}
+
+.tweet-body h5 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.tweet-body p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.tweet-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tweet-buttons a {
+  transition: color 0.5s ease;
+  color: rgb(179, 182, 187);
+}
+
+.liked {
+  color: rgb(224, 36, 94) !important;
+}
+
+.retweeted {
+  color: rgb(23, 191, 99) !important;
+}
+
+.like-button:hover {
+  color: rgb(185, 22, 74) !important;
+}
+
+.retweet-button:hover {
+  color: rgb(13, 126, 64) !important;
+}
